@@ -1,0 +1,20 @@
+﻿<Window x:Class="ChessEngine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChessEngine"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        MaxHeight="450" MaxWidth="800"
+        MinHeight="450" MinWidth="800"
+        Background="#ceeef0">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Name="PlayButton" Content="Play" Height="60" Width="80" Background="#FF349643" Click="PlayButton_Click" Cursor="Hand" Grid.Column="0" FontSize="20"></Button>
+        <Button Name="ExitButton" Content="Exit" Height="60" Width="80" Background="#db6451" Click="ExitButton_Click" Cursor="Hand" Grid.Column="1" FontSize="20" ></Button>
+    </Grid>
+</Window>

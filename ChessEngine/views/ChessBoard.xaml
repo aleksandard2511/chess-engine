@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="ChessEngine.views.ChessBoard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChessEngine.views"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="1000">
+    <Grid Name="RootGrid">
+        <Grid Name="BoardGrid" Width="900" Height="900">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="105"></ColumnDefinition>
+                <ColumnDefinition Width="105"></ColumnDefinition>
+                <ColumnDefinition Width="105"></ColumnDefinition>
+                <ColumnDefinition Width="105"></ColumnDefinition>
+                <ColumnDefinition Width="105"></ColumnDefinition>
+                <ColumnDefinition Width="105"></ColumnDefinition>
+                <ColumnDefinition Width="105"></ColumnDefinition>
+                <ColumnDefinition Width="105"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="105"></RowDefinition>
+                <RowDefinition Height="105"></RowDefinition>
+                <RowDefinition Height="105"></RowDefinition>
+                <RowDefinition Height="105"></RowDefinition>
+                <RowDefinition Height="105"></RowDefinition>
+                <RowDefinition Height="105"></RowDefinition>
+                <RowDefinition Height="105"></RowDefinition>
+                <RowDefinition Height="105"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+            </Grid.RowDefinitions>
+        </Grid>
+        <Canvas Name="OverlayCanvas" IsHitTestVisible="False">
+                <StackPanel x:Name="PromotionPanel"
+                    Orientation="Horizontal"
+                    Visibility="Collapsed"
+                    Background="LightGray"
+                    IsHitTestVisible="True">
+
+                    <Button Height="50" Width="50" Content="♕" Click="PromoteToQueen_Click" Panel.ZIndex="100"/>
+                    <Button Height="50" Width="50" Content="♖" Click="PromoteToRook_Click" Panel.ZIndex="100"/>
+                    <Button Height="50" Width="50" Content="♗" Click="PromoteToBishop_Click" Panel.ZIndex="100"/>
+                    <Button Height="50" Width="50" Content="♘" Click="PromoteToKnight_Click" Panel.ZIndex="100"/>
+
+                </StackPanel>
+            </Canvas>
+        </Grid>
+    
+</UserControl>
