@@ -15,6 +15,7 @@ Technologies:
 -WPF
 
 Screenshots:
+
 <img width="782" height="433" alt="Screenshot 2026-11-16 090111" src="https://github.com/user-attachments/assets/296606a2-b139-44f9-9227-71831a87d775" />
 <img width="1173" height="980" alt="Screenshot 2026-11-16 090127" src="https://github.com/user-attachments/assets/42f12e77-fe7f-44aa-84fd-639f56778695" />
 
